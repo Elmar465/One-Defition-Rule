@@ -6,9 +6,23 @@
 //
 
 #include <iostream>
+#include "Person.hpp"
+#include <string>
+#include "OtherPerson.hpp"
 
-int main(int argc, const char * argv[]) {
+int main() {
     // insert code here...
-    std::cout << "Hello, World!\n";
+        
+   Person p1 ("Elmar Jafarli", 27);
+
+   p1.print_info();
+
+    OtherPerson p2 ("Elmar465@gmail.com", 1);
+    
+    p2.print();
+    
+    ThirdPerson p3 ("male", 475124561);
+    
+    p3.getData();
     return 0;
 }
